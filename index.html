@@ -16,7 +16,8 @@
     <body>
       <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hane restaurant </h1>
       <hr>
-      <nav><a href="#about"><h3>about <abbr title="hane restaurant">HN</abbr></h3></a>
+      <nav>
+        <a href="#about"><h3>about <abbr title="hane restaurant">HN</abbr></h3></a>
       </nav>
       <hr>
       <header>
@@ -90,6 +91,107 @@
            <ul><li>ijaa&nbsp;&nbsp;&nbsp;price</li></ul></dd>
        </dl>
       </fieldset>
+      <fieldset>
+        <legend><h2>reservation</h2></legend>
+        <p>
+        <label for="firstname">firstname</label>
+        <input type="text" name="firstname" id="firstname" placeholder="flen" autocomplete required>
+        </p>
+        <p>
+        <label for="lastname">lastname</label>
+        <input type="text" name="lastname" id="lastname" placeholder="ben flen" autocomplete required>
+        </p>
+        <p>
+        <label for="phone">phone number</label>
+        <input type="tel" name="phone number" id="phone" placeholder="11 111 111" pattern="[0-9]{2}[0-9]{3}[0-9]{3}" autocomplete required>
+        </p>
+        <p>
+        <label for="age">age</label>
+        <input type="number" min="1945" max="2025" step="1" value="1990">
+        </p>
+        <p>
+        <label for="table"><h3>picking table:</h3></label>
+        </p>
+        <p>
+        <label for="tb1">tb1</label>
+        <input type="radio" name="table" id="tb1">
+        </p>
+        <p>
+        <label for="tb2">tb2</label>
+        <input type="radio" name="table" id="tb2">
+        </p>
+        <p>
+        <label for="tb3">tb3</label>
+        <input type="radio" name="table" id="tb3">
+        </p>
+        <p>
+        <label for="tb4">tb4</label>
+        <input type="radio" name="table" id="tb4">
+        </p>
+        <p>
+        <label for="order"><h3>order:</h3></label>
+        </p>
+        <p>
+        <label for="orderin">order in restaraunt</label>
+        <input type="checkbox" name="order" id="orderin">
+        </p>
+        <p>
+        <label for="orderout">order from site</label>
+        <a href="#ordr"><input type="checkbox" name="order" id="orderout"></a>
+        </p>
+      </fieldset>
+      <section id="ordr">
+       <fieldset>
+        <legend ><h2>ordering</h2></legend>
+        <p>
+        <label for="sandwiches">sandwiches</label>  
+        <input type="text" name="sandwiches" id="sandwiches" list="sandwiches-list">
+        <datalist id="sandwiches-list">
+          <option value="kafteji">kafteji</option>
+          <option value="ton">ton</option>
+          <option value="escalope">escalope</option>  
+        </datalist>
+        </p>
+        <p>
+        <label for="dishes">dishes</label>  
+        <input type="text" name="dishes" id="dishes" list="dishes-list">
+        <datalist id="dishes-list">
+          <option value="kafteji">kafteji</option>
+          <option value="tounsie">tounsie</option>
+          <option value="ijaa">ijaa</option>
+        </datalist>
+        </p>
+        <p>
+         <label for="drinks">drinks</label>   
+        <input type="text" name="drinks" id="drinks" list="drinks-list">
+        <datalist id="drinks-list">
+          <option value="water">water</option>
+          <option value="soda">soda</option>
+        </datalist>
+        </p>
+       </fieldset>
+      </section>
+      <section>
+        <fieldset>
+          <legend><h3>review</h3></legend>
+          <p>
+          <label for="1str">1star</label>
+          <input type="radio" name="star" id="1str">
+          <label for="2str">2star</label>
+          <input type="radio" name="star" id="2str">
+          <label for="3str">3star</label>
+          <input type="radio" name="star" id="3str">
+          <label for="4str">4star</label>
+          <input type="radio" name="star" id="4str">
+          <label for="5str">5star</label>
+          <input type="radio" name="star" id="5str">
+          </p>
+          <p>
+          <h3>comments</h3>
+          <textarea name="comments" id="comments" cols="40" rows="10"></textarea>
+          </p>
+        </fieldset>
+      </section>
 
       </main>
 
